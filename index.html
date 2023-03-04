@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>Submission</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- Main CSS -->
+        <link rel="stylesheet" href="style.css">
+        
+        <!-- ForkAwesome for icons -->
+        <!-- NOTE: ONLY ICONS, the style included only applies to the icons :) -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
+        
+        <!-- Main Script index.js -->
+        <script src="index.js"></script>
+    </head>
+
+    <body class="locked">
+
+        <!-- SECTION: Fullscreen cover -->
+        <!-- NOTE: Intended as one-time cover so button / access to reopen it is not provided (just reload) -->
+        <div class="cover" role="fullscreen-cover">
+            <div class="cover-content">
+
+                <div class="message">
+                    <h1>Submission</h1>
+                    <p>Here's my submission for the Basic Web Programming.</p>
+                </div>
+                
+                <button class="cover-btn-enter" onclick="cover_toggle()">Enter</button>
+                
+                <div class="me">
+                    <p>Fatan A. H.</p>
+                    
+                    <p><a href="https://github.com/KetanBasi">
+                        <i class="fa fa-github" aria-hidden="true"></i>
+                        GitHub
+                    </a></p>
+                    
+                    <p><a href="https://www.linkedin.com/in/fatan-aqilla-hartadi/">
+                        <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                        LinkedIn
+                    </a></p>
+                </div>
+
+            </div>
+        </div>
+        <!-- !SECTION: Fullscreen cover -->
+
+        <!-- SECTION: Header (Nav & Banner) -->
+        <header id="header" class="">
+        
+            <nav id="nav" class="acrylic">
+                <ul>
+                    <li>
+                        <a href="#main">Main</a>
+                        <button class="dropdown-icon" onclick="open_menu(this)">
+                            <i class="fa fa-caret-down" aria-hidden="true"></i>
+                        </button>
+                        <ul class="submenu dropdown acrylic dark hidden">
+                            <li><a href="#dishes-ideas">Dishes Ideas</a></li>
+                            <li><a href="#educational-youtube">Educational Channels</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#notes">Notes</a></li>
+                </ul>
+            </nav>
+            
+            <div id="banner">
+                
+                <!-- ? Title & summary -->
+                <h1 class="article-title">What to do when you're bored</h1>
+                <p>This article will show you dishes you can try to make and some educational YouTube channels that are awesome and interesting to watch</p>
+                
+                <!-- ? Article Statistics (Auto updated on load) -->
+                <div class="stats">
+                    
+                    <!-- ? Word Count -->
+                    <div class="stat word-count">
+                        <p>
+                            <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                            <span>0</span> words
+                        </p>
+                    </div>
+                    
+                    <!-- ? Approx. Reading Time -->
+                    <div class="stat read-time">
+                        <p>
+                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                            <span>0</span> min(s) read
+                        </p>
+                    </div>
+
+                </div>
+
+                <!-- ? Scroll down to the main content -->
+                <div class="scroll-down">
+                    <a href="#main">
+                        <i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
+                    </a>
+                </div>
+
+            </div>
+
+        </header>
+        <!-- !SECTION: Header (Nav & Banner) -->
+
+        <main id="main" class="section">
+            <div class="wrapper">
+                
+                <!-- SECTION: Articles -->
+                <div id="articles" class="box content main-content acrylic dark">
+                    
+                    <!-- ? Dishes -->
+                    <article id="dishes-ideas">
+                        <h2>Dishes Ideas</h2>
+                        <p>Here are some dishes ideas for you to try out!</p>
+                        
+                        <div>
+                            <h3>1. Simple Noodles</h3>
+                            <img src="https://images.unsplash.com/photo-1591814468924-caf88d1232e1">
+                            <p>Be creative with different seasoning and ingredients. There are many ways, you can experimenting with seasoning such as adding the taste of rendang or other taste that you've never think of. Or, you can try adding another ingredients to make your own version of mie ayam!</p>
+                        </div>
+
+                        <div>
+                            <h3>2. EGGS!</h3>
+                            <img src="https://images.unsplash.com/photo-1625938399755-bf44eb6c24c0">
+                            <p>There are many dishes can be made with eggs.</p>
+                            <p>You can cook anything with EGGS! From fired rice (with EGGS!), even salad</p>
+                        </div>
+                        
+                    </article>
+                    
+                    <!-- ? YT Channels -->
+                    <!-- NOTE: Uses youtube embed sharing frames -->
+                    <article id="educational-youtube">
+                        <h2>Educational YouTube Channels</h2>
+                        <p>Behind the YouTube algorithm recommending your interests, there are a lot of educational YouTube channels that can widen and deepen your knowledge.</p>
+                        
+                        <div>
+                            <h3>1. <a href="https://www.youtube.com/@RealEngineering">Real Engineering</a></h3>
+                            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/_bDXXWQxK38" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <p>Real Engineering is a channel that discuss about wide variety of engineering such as aerospace engineering, mechanical engineering, civil engineering, and electrical engineering.</p>
+                            <p>This channel provides in-depth explanations that easy to understand even when the topic is very complex and needs a lot of formulas.</p>
+                            <p>The composition won't gives the old-school plain book impression, you'll like it like a story.</p>
+                        </div>
+
+                        <div>
+                            <h3>2. <a href="https://www.youtube.com/@realscience">Real Science</a></h3>
+                            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/7aWL2iEb6y4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <p>Like Real Engineering, Real Science brings up broad topics of science including biology, physics, chemistry, and astronomy, such as rainforest, DNA, microorganism, earth environments, the biology of various animals and species, and many more.</p>
+                            <p>This channel along with Real Engineering is an excellent educational channels that gives valuable insights you probably wouldn't expect anywhere else</p>
+                        </div>
+
+                        <div>
+                            <h3>3. <a href="https://www.youtube.com/@theslowmoguys">The Slow Mo Guys</a></h3>
+                            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/5nGaXY5Gxy4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <p>The Slow Mo Guys is a channel that specializes in creating slow-motion videos of various experiments and events using high-speed cameras to capture the footage of the experiments such as comparing the speed of cracking glass with a bullet, exploding spray paint, daytime fireworks, and many more!</p>
+                            <p>This channel is great to see the world from different perspectives by slowing down the time (slow motion videos).</p>
+                            <p>Not only that, they also produces educational videos such as how camera works, how monitor produces the display images that we can see, how sound travels, and the physics behind various sports that maybe most of us have probably never thought about</p>
+                        </div>
+
+                        <div>
+                            <h3>4. <a href="https://www.youtube.com/@smartereveryday">SmarterEveryDay</a></h3>
+                            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/MFzDaBzBlL0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <p>SmarterEveryDay is a channel about explorations that covers wide range of topics from physics, chemistry, even engineering that are well-prepared and well-researched to gives you complete understanding very engagingly.</p>
+                            <p>The unique aspect of SmarterEveryDay is that many of its videos focused on understanding on the mechanics and physics behind everyday objects and events.</p>
+                        </div>
+                    </article>
+
+                    <article>
+                        <h2>Final Thought</h2>
+                        <p>While there are many things to do and many content to watch, by finding and choosing the right one, we can find the most suitable activities we can do that gives us not only entertainment but we also can gain more and more values</p>
+                    </article>
+                
+                </div>
+                <!-- !SECTION: Articles -->
+                
+                <!-- ? Side bio -->
+                <aside class="box acrylic dark">
+                    
+                    <h1>About me</h1>
+                    
+                    <img src="img/5wd0yqzw.bmp"></img>
+                    <p class="name">Fatan Aqilla Hartadi</p>
+
+                    <p>Studying at Informatics of Telkom University</p>
+                    
+                    <p>A self-taught programmer, knows programming in Python, interested in wide variety of topics including machine learning / A.I. and game development, love cats and a dreamer</p>
+
+                    <div class="links">
+                        <p><a href="https://github.com/KetanBasi">
+                            <i class="fa fa-github" aria-hidden="true"></i>
+                            GitHub
+                        </a></p>
+                        <p><a href="https://www.linkedin.com/in/fatan-aqilla-hartadi/">
+                            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                            LinkedIn
+                        </a></p>
+                    </div>
+
+                </aside>
+            
+            </div> <!-- wrapper -->
+        </main>
+
+        <!-- Notes -->
+        <div id="notes" class="section">
+            <div class="wrapper">
+                <div class="box content">
+                    <article>
+                        
+                        <h1>Notes</h1>
+
+                        <p>Icons (clock, chart, arrow, etc.):
+                            <a href="https://forkaweso.me/">
+                                Fork Awesome
+                            </a>
+                        </p>
+                        
+                        <p>Images:
+                            <a href="https://unsplash.com/">
+                                Unsplash
+                            </a>
+                        </p>
+                    
+                    </article>
+                </div>
+            </div>
+        </div>
+
+        <footer class="acrylic dark">
+            <p>Fatan A. H. | 2023 | Made with <span>responsibility</span></p>
+        </footer>
+        
+        <!-- custom JS -->
+        <script>
+            // ? Set all anchors to scroll with the scroll_to instead
+            anchors = document.querySelectorAll("a[href^='#']");
+            anchors.forEach(anchor => {
+                anchor.addEventListener("click", (e) => {
+                    e.preventDefault();
+                    scroll_to(anchor.getAttribute("href"));
+                })
+            });
+
+            article = document.querySelector("#articles");
+            aside = document.querySelector("aside");
+            window.addEventListener("scroll", () => {
+                // ? Set the nav to dark when scrolled
+                if (document.documentElement.scrollTop > nav.offsetHeight) {
+                    nav.classList.add("dark");
+                } else {
+                    nav.classList.remove("dark");
+                }
+
+                // ? Toggle the article backgrounds: remove additional darkness when scrolled
+                if (document.documentElement.scrollTop >= (main.offsetTop - nav.offsetHeight)) {
+                    article.classList.remove("dark");
+                    aside.classList.remove("dark");
+                } else {
+                    article.classList.add("dark");
+                    aside.classList.add("dark");
+                }
+            });
+
+            update_article_stats();
+        </script>
+    </body>
+
+</html>
